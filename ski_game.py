@@ -201,7 +201,7 @@ def test():
     game = SkiGame()
     rollout_policy = RandomSki()
     mcts_ski = SkiMcts(game, rollout_policy)
-    episodes = 150
+    episodes = 1000
     # cProfile.runctx('mcts_ski.run(1)', None, locals())
     # mcts_ski.run(100)
     current_node = mcts_ski.root_node
